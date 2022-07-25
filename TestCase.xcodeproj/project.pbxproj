@@ -21,6 +21,7 @@
 		A820A7B8288E7B8F0076A4E0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7B7288E7B8F0076A4E0 /* DetailView.swift */; };
 		A820A7BC288E7BC40076A4E0 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7BB288E7BC40076A4E0 /* ResultViewModel.swift */; };
 		A820A7C1288E82E60076A4E0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A820A7C0288E82E60076A4E0 /* Alamofire */; };
+		A820A7C5288EA9250076A4E0 /* CollectionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7C4288EA9240076A4E0 /* CollectionRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A820A7B2288E7AF70076A4E0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A820A7B7288E7B8F0076A4E0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A820A7BB288E7BC40076A4E0 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		A820A7C4288EA9240076A4E0 /* CollectionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				A820A780288E774F0076A4E0 /* ContentView.swift */,
+				A820A7C4288EA9240076A4E0 /* CollectionRowView.swift */,
 				A820A7B7288E7B8F0076A4E0 /* DetailView.swift */,
 			);
 			path = View;
@@ -321,6 +324,7 @@
 				A820A7BC288E7BC40076A4E0 /* ResultViewModel.swift in Sources */,
 				A820A7B8288E7B8F0076A4E0 /* DetailView.swift in Sources */,
 				A820A781288E774F0076A4E0 /* ContentView.swift in Sources */,
+				A820A7C5288EA9250076A4E0 /* CollectionRowView.swift in Sources */,
 				A820A77F288E774F0076A4E0 /* TestCaseApp.swift in Sources */,
 				A820A7B1288E787C0076A4E0 /* ResponseDataModel.swift in Sources */,
 			);

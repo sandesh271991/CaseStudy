@@ -14,6 +14,7 @@ class HomeViewModel: ObservableObject {
     @Published var results = [ResultItem]()
     @Published var coreDM: PersistenceController = PersistenceController()
 
+    //MARK: API Call
     func getData() {
         guard let gUrl = URL(
             string: "https://api.artic.edu/api/v1/artworks"
