@@ -16,7 +16,7 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
-    @StateObject private var viewModel = HomeViewModel()
+    @StateObject var viewModel = HomeViewModel()
 
 
     var body: some View {

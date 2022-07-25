@@ -6,9 +6,17 @@
 //
 
 import XCTest
+import CoreData
+
 @testable import TestCase
 
 class TestCaseTests: XCTestCase {
+
+    var controller: PersistenceController =  PersistenceController()
+    @Published var results = [ResultItem]()
+
+    var home = ContentView()
+
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,6 +29,23 @@ class TestCaseTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+
+    func testFetchCoreDataItems(){
+        controller.saveResult(title: "testData")
+        let getData = controller.getResult()
+        XCTAssertTrue(getData.count > 0)
+    }
+
+    func testDeleteCoreDataItems(){
+        controller.deleteOldResult()
+        let getData = controller.getResult()
+        XCTAssertTrue(getData.count == 0)
+    }
+
+    func testDetailViewData() throws {
+        let subject = DetailView(data: "testData")
+        XCTAssertTrue(subject.data == "testData")
     }
 
     func testPerformanceExample() throws {
