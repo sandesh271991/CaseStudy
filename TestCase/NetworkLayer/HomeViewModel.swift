@@ -12,7 +12,7 @@ import SwiftUI
 class HomeViewModel: ObservableObject {
 
     @Published var results = [ResultItem]()
-    @Published var coreDM: PersistenceController = PersistenceController()
+    @Published var coreDM: PersistenceManager = PersistenceManager()
 
     //MARK: API Call
     func getData() {
