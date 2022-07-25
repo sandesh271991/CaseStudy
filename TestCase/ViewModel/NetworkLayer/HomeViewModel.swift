@@ -26,6 +26,10 @@ class HomeViewModel: ObservableObject {
                     .decode(ResponseData.self, from: data)
                 DispatchQueue.main.async { [weak self] in
                     self?.results = response.data ?? []
+                    self?.coreDM.deleteOldResult()
+                    self?.results.forEach{
+                        self?.coreDM.saveResult(title: $0.title ?? "")
+                    }
                 }
             } catch {
                 print("*** ERROR ***")

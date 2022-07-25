@@ -15,7 +15,7 @@ struct PersistenceController {
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
             let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            newItem.title = String()
         }
         do {
             try viewContext.save()
@@ -51,5 +51,42 @@ struct PersistenceController {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+    }
+
+
+    func saveResult(title: String) {
+        let result =  Item(context: container.viewContext)
+        result.title = title
+
+        do {
+            try container.viewContext.save()
+        }
+        catch {
+            // TODO: handle the error
+            print("error")
+        }
+    }
+
+    func getResult() -> [Item] {
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+
+        do {
+           return try container.viewContext.fetch(fetchRequest)
+        }
+        catch {
+            return []
+        }
+    }
+
+    func deleteOldResult() {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Item")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try container.viewContext.execute(deleteRequest)
+        } catch let error as NSError {
+            // TODO: handle the error
+            print("error")
+        }
     }
 }
