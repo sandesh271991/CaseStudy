@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 import SwiftUI
 
-class HomeViewModel: ObservableObject {
+class NetworkManager: ObservableObject {
 
     @Published var results = [ResultItem]()
     @Published var coreDM: PersistenceManager = PersistenceManager()

@@ -16,7 +16,7 @@ struct HomeView: View {
         animation: .default)
     
     private var items: FetchedResults<Item>
-    @StateObject var viewModel = HomeViewModel()
+    @StateObject var networkManager = NetworkManager()
 
     var body: some View {
         GeometryReader { geometry in
@@ -28,14 +28,15 @@ struct HomeView: View {
                             NavigationLink(destination: {
                                 DetailView(data: item.title ?? "")
                             }, label: {
-                                CollectionRowView(item: item)
+                                let viewModel = ResultItem(id: nil, title: item.title)
+                                CollectionRowView(resultVM: ResultViewModel(model: viewModel))
                             })
                         }
                     }
                 }.padding([.horizontal], 5)
             }
             .onAppear(perform: {
-                viewModel.getData()
+                networkManager.getData()
             })
         }
     }

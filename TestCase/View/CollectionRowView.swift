@@ -10,13 +10,14 @@ import SwiftUI
 
 struct CollectionRowView: View {
 
-    @ObservedObject var item: Item
+  //  @ObservedObject var item: Item
+    let resultVM: ResultViewModel
 
     var body: some View {
         HStack {
             RoundedRectangle(cornerRadius: 1).fill(.yellow)
                 .frame(maxWidth: .infinity).aspectRatio(1, contentMode: .fit)
-                .overlay(Text(item.title ?? ""))
+                .overlay(Text(resultVM.artworkTitle ?? ""))
         }.padding(.all, 2)
             .background(Color.red)
     }
