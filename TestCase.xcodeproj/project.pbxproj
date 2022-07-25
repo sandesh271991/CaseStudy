@@ -17,6 +17,9 @@
 		A820A79F288E77500076A4E0 /* TestCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A79E288E77500076A4E0 /* TestCaseUITests.swift */; };
 		A820A7A1288E77500076A4E0 /* TestCaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7A0288E77500076A4E0 /* TestCaseUITestsLaunchTests.swift */; };
 		A820A7B1288E787C0076A4E0 /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7B0288E787C0076A4E0 /* ResponseDataModel.swift */; };
+		A820A7B3288E7AF70076A4E0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7B2288E7AF70076A4E0 /* HomeViewModel.swift */; };
+		A820A7B4288E7AF70076A4E0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7B2288E7AF70076A4E0 /* HomeViewModel.swift */; };
+		A820A7B5288E7AF70076A4E0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7B2288E7AF70076A4E0 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,7 @@
 		A820A79E288E77500076A4E0 /* TestCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseUITests.swift; sourceTree = "<group>"; };
 		A820A7A0288E77500076A4E0 /* TestCaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A820A7B0288E787C0076A4E0 /* ResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
+		A820A7B2288E7AF70076A4E0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 		A820A7AF288E785E0076A4E0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A820A7B2288E7AF70076A4E0 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A820A788288E77500076A4E0 /* Persistence.swift in Sources */,
+				A820A7B3288E7AF70076A4E0 /* HomeViewModel.swift in Sources */,
 				A820A78B288E77500076A4E0 /* TestCase.xcdatamodeld in Sources */,
 				A820A781288E774F0076A4E0 /* ContentView.swift in Sources */,
 				A820A77F288E774F0076A4E0 /* TestCaseApp.swift in Sources */,
@@ -303,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A820A795288E77500076A4E0 /* TestCaseTests.swift in Sources */,
+				A820A7B4288E7AF70076A4E0 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A820A7A1288E77500076A4E0 /* TestCaseUITestsLaunchTests.swift in Sources */,
+				A820A7B5288E7AF70076A4E0 /* HomeViewModel.swift in Sources */,
 				A820A79F288E77500076A4E0 /* TestCaseUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
