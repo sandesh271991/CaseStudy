@@ -16,6 +16,7 @@
 		A820A795288E77500076A4E0 /* TestCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A794288E77500076A4E0 /* TestCaseTests.swift */; };
 		A820A79F288E77500076A4E0 /* TestCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A79E288E77500076A4E0 /* TestCaseUITests.swift */; };
 		A820A7A1288E77500076A4E0 /* TestCaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7A0288E77500076A4E0 /* TestCaseUITestsLaunchTests.swift */; };
+		A820A7B1288E787C0076A4E0 /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820A7B0288E787C0076A4E0 /* ResponseDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A820A79A288E77500076A4E0 /* TestCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A820A79E288E77500076A4E0 /* TestCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseUITests.swift; sourceTree = "<group>"; };
 		A820A7A0288E77500076A4E0 /* TestCaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A820A7B0288E787C0076A4E0 /* ResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,9 @@
 			children = (
 				A820A77E288E774F0076A4E0 /* TestCaseApp.swift */,
 				A820A780288E774F0076A4E0 /* ContentView.swift */,
+				A820A7AF288E785E0076A4E0 /* ViewModel */,
+				A820A7AE288E78570076A4E0 /* Model */,
+				A820A7AD288E78510076A4E0 /* View */,
 				A820A782288E77500076A4E0 /* Assets.xcassets */,
 				A820A787288E77500076A4E0 /* Persistence.swift */,
 				A820A789288E77500076A4E0 /* TestCase.xcdatamodeld */,
@@ -131,6 +136,28 @@
 				A820A7A0288E77500076A4E0 /* TestCaseUITestsLaunchTests.swift */,
 			);
 			path = TestCaseUITests;
+			sourceTree = "<group>";
+		};
+		A820A7AD288E78510076A4E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A820A7AE288E78570076A4E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A820A7B0288E787C0076A4E0 /* ResponseDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A820A7AF288E785E0076A4E0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +294,7 @@
 				A820A78B288E77500076A4E0 /* TestCase.xcdatamodeld in Sources */,
 				A820A781288E774F0076A4E0 /* ContentView.swift in Sources */,
 				A820A77F288E774F0076A4E0 /* TestCaseApp.swift in Sources */,
+				A820A7B1288E787C0076A4E0 /* ResponseDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
